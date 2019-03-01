@@ -13,6 +13,20 @@
 			display: none;
 			margin: 1em;
 		}
+        
+        .container {
+          height: 200px;
+          position: relative;
+          border: 3px solid green;
+        }
+
+        .vertical-center {
+          margin: 0;
+          position: absolute;
+          top: 50%;
+          -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+        }
 	</style>
   </head>
     
@@ -44,11 +58,21 @@
 
     </head>
     <body>
+        
         <form id="myForm">
-          <input type="text" id="name" placeholder="Enter your name">
-          <input type="text" id="age" placeholder="Enter your age">      
+            <div>
+                <input type="text" id="name" placeholder="Title"> 
+            </div>
+            <div>
+                <input type="text" id="age" placeholder="Date"> 
+            </div>
+            <div>
+                <textarea rows="4" cols="50">
+                
+                </textarea> 
+            </div>
         </form>
-        <button id="getFormData">Get Form Data</button>
+        <button id="getFormData">Submit Note</button>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
