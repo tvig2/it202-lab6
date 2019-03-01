@@ -93,8 +93,9 @@
                   
                   db.notes.each(function(note)
                   {
+                      console.log("here");
                       var p = $("<p>")
-                      p.text(note.title)
+                      p.text(note.title + " " + note.date + " " + note.content);
                       $("#list").append(p);
                   });
               }
@@ -128,7 +129,7 @@
     </body>
   </div>
   <div class="content" id="list">
-     List of items
+     List of notes
   </div>
   <div class="content" id="screen3">
     This is screen 3
